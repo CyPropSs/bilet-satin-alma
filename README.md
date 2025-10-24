@@ -59,22 +59,26 @@ Paketleme: Docker
 Projeyi Docker ortamında çalıştırmak için:
 
 # Depoyu klonla
+```bash
+
 git clone https://github.com/CyPropSs/bilet-satin-alma.git
+```
+```
 cd bilet-satin-alma
-
+```
 # Docker image oluştur
+```
 docker build -t bilet-satin-alma .
-
+```
 # Container başlat
-docker run -p 8080:80 bilet-satin-alma
+```docker run -p 8080:80 bilet-satin-alma```
 
-
-Uygulamaya tarayıcıdan http://localhost:8080
+Uygulamaya tarayıcıdan ```http://localhost:8080```
  adresiyle erişebilirsin.
 
-kullanmadan önce http://localhost:8080/database/setup.php adresine git.
+kullanmadan önce ```http://localhost:8080/database/setup.php``` adresine git.
 
-eğer veritabanını temizlemek istersen http://localhost:8080/database/clear.php adresine git.
+eğer veritabanını temizlemek istersen ```http://localhost:8080/database/clear.php``` adresine git.
 
-veritabanında değişiklik yapmak için http://localhost:8080/database/check_all.php adresine git.
+veritabanında değişiklik yapmak için ```http://localhost:8080/database/check_all.php``` adresine git.
 
