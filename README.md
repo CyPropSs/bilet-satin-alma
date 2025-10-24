@@ -41,18 +41,6 @@ Yeni firma ve “Firma Admin” kullanıcıları oluşturabilir.
 Tüm firmalarda geçerli indirim kuponlarını yönetebilir.
 
 
-| Sayfa / İşlev      | Ziyaretçi | User | Firma Admin | Admin | Açıklama                    |
-| ------------------ | --------- | ---- | ----------- | ----- | --------------------------- |
-| Ana Sayfa          | ✅         | ✅    | ✅           | ✅     | Sefer arama ve listeleme    |
-| Giriş / Kayıt      | ✅         | ✅    | ✅           | ✅     | Kullanıcı işlemleri         |
-| Sefer Detayları    | ✅         | ✅    | ✅           | ✅     | Sefer bilgileri             |
-| Bilet Satın Alma   | ❌         | ✅    | ❌           | ❌     | Kredi ile satın alma        |
-| Bilet İptal Etme   | ❌         | ✅    | ✅           | ❌     | 1 saat kuralı kontrolü      |
-| Hesabım / Biletler | ❌         | ✅    | ✅           | ❌     | Profil ve PDF indir         |
-| Firma Admin Paneli | ❌         | ❌    | ✅           | ❌     | Firma sefer yönetimi        |
-| Admin Paneli       | ❌         | ❌    | ❌           | ✅     | Firma ve kullanıcı yönetimi |
-
-
 
 🛠️ Teknolojiler ve Araçlar
 
