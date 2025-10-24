@@ -75,12 +75,27 @@ docker build -t bilet-satin-alma .
 docker run -p 8080:80 bilet-satin-alma
 ```
 
-Uygulamaya tarayıcıdan ```http://localhost:8080```
+Uygulamaya tarayıcıdan 
+```bash 
+http://localhost:8080
+```
  adresiyle erişebilirsin.
 
-kullanmadan önce ```http://localhost:8080/database/setup.php``` adresine git.
+kullanmadan önce 
+```bash 
+http://localhost:8080/database/setup.php
+```
+adresine git.
 
-eğer veritabanını temizlemek istersen ```http://localhost:8080/database/clear.php``` adresine git.
+eğer veritabanını temizlemek istersen 
+```bash 
+http://localhost:8080/database/clear.php
+```
+adresine git.
 
-veritabanında değişiklik yapmak için ```http://localhost:8080/database/check_all.php``` adresine git.
+veritabanında değişiklik yapmak için 
+```bash 
+http://localhost:8080/database/check_all.php
+```
+adresine git.
 
