@@ -1,0 +1,365 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --info-color: #17a2b8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.seat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--light-color);
+    border: 2px solid #ddd;
+}
+
+.seat.selected {
+    background-color: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+}
+
+.seat.occupied {
+    background-color: var(--accent-color);
+    color: white;
+    cursor: not-allowed;
+    border-color: var(--accent-color);
+}
+
+.seat.driver {
+    background-color: #95a5a6;
+    color: white;
+    cursor: default;
+}
+
+.seat-space {
+    display: inline-block;
+    width: 20px;
+}
+
+.bus-layout {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.driver-seat {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.discount-badge {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.dashboard-card {
+    height: 100%;
+}
+
+.ticket {
+    border-left: 5px solid var(--primary-color);
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.ticket-cancelled {
+    border-left-color: var(--accent-color);
+    opacity: 0.7;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sefer-card {
+    transition: all 0.3s ease;
+}
+
+.sefer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.table-actions {
+    white-space: nowrap;
+}
+
+/* ===== ADMIN PANEL STILLERI ===== */
+
+/* Admin Dashboard Kartları */
+.admin-stats .card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.admin-stats .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Border Colors for Admin Stats */
+.border-left-primary {
+    border-left: 4px solid var(--primary-color) !important;
+}
+
+.border-left-success {
+    border-left: 4px solid var(--success-color) !important;
+}
+
+.border-left-info {
+    border-left: 4px solid var(--info-color) !important;
+}
+
+.border-left-warning {
+    border-left: 4px solid var(--warning-color) !important;
+}
+
+/* Admin Shadow */
+.admin-shadow {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+/* Admin Text Sizes */
+.text-xs {
+    font-size: 0.7rem;
+}
+
+.text-gray-800 {
+    color: #5a5c69 !important;
+}
+
+.text-gray-300 {
+    color: #dddfeb !important;
+}
+
+/* Admin Table Styles */
+.admin-table {
+    font-size: 0.9rem;
+}
+
+.admin-table th {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Admin Badge Styles */
+.admin-badge {
+    font-size: 0.75em;
+}
+
+/* Admin Button Group */
+.btn-group-sm > .btn {
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Admin Alert Styles */
+.admin-alert {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Admin Card Specific */
+.admin-card {
+    border: 1px solid #e3e6f0;
+    border-radius: 10px;
+}
+
+.admin-card .card-header {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Quick Access Buttons */
+.quick-access .btn {
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.quick-access .btn:hover {
+    transform: translateX(5px);
+}
+
+/* Responsive Admin */
+@media (max-width: 768px) {
+    .admin-stats .card {
+        margin-bottom: 15px;
+    }
+    
+    .btn-group-sm > .btn {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .table-actions {
+        white-space: normal;
+    }
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--secondary-color);
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: var(--primary-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Status Badges */
+.badge-status-active {
+    background-color: var(--success-color);
+}
+
+.badge-status-cancelled {
+    background-color: var(--accent-color);
+}
+
+.badge-status-expired {
+    background-color: var(--warning-color);
+}
+
+.badge-status-pending {
+    background-color: var(--info-color);
+}
+
+/* Custom Backgrounds */
+.bg-admin-light {
+    background-color: #f8f9fa;
+}
+
+.bg-admin-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-admin-secondary {
+    background-color: var(--secondary-color);
+}
