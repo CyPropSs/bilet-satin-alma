@@ -71,7 +71,7 @@ cd bilet-satin-alma
 docker build -t bilet-satin-alma .
 ```
 # Container başlat
-```docker run -p 8080:80 bilet-satin-alma```
+```bash docker run -p 8080:80 bilet-satin-alma```
 
 Uygulamaya tarayıcıdan ```http://localhost:8080```
  adresiyle erişebilirsin.
